@@ -14,7 +14,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
       - ${PIHOLE_HOME}/pihole/:/etc/pihole/
-      - ${PIHOLE_HOME}/dnsmasq.d/:/etc/dnsmasq.d/
+      - ${PIHOLE_HOME}/pihole/dnsmasq.d/:/etc/dnsmasq.d/
     dns:
       - 127.0.0.1
     cap_add:
