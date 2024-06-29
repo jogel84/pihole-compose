@@ -2,10 +2,10 @@ services:
   pihole:
     container_name: pihole
     hostname: pi-hole
-    image: pihole/pihole:latest
+    image: pihole/pihole:${CONTAINER_PIHOLE_VERSION}
     ports:
       - "53:53/tcp"
-      - "53:53/udp"
+      - ${CONTEINER_INTERNAL_DNS_IP_HOST}
       - "67:67/udp"
       - "8081:80/tcp"
 
